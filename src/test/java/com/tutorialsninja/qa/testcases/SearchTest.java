@@ -43,6 +43,7 @@ public class SearchTest extends Base {
 		Assert.assertEquals(searchPage.retrieveNoProductMessageText(), "abcd","No product message in search results is displayed");
 	}
 
+	//Comments added by Kumar Reddy updated again
 	@Test(priority = 3, dependsOnMethods= {"verifySearchWithValidProduct()", "verifySearchWithInvalidProduct()"})
 	public void verifySearchWithoutAnyProduct() {
 		searchPage = homePage.clickOnSearchButton();
